@@ -5,6 +5,7 @@ feb2007 <- subset(data, Date == "2/2/2007" | Date == "1/2/2007")
 stdtime <- strptime(paste(feb2007$Date, feb2007$Time), format = "%d/%m/%Y %H:%M:%S")
 feb2007 <- cbind(stdtime, feb2007)
 png(file = "plot4.png")
+# Here we combine four charts on one file
 par(mfcol = c(2,2))
 plot(feb2007$stdtime, feb2007$Global_active_power, 
      type = "l", 

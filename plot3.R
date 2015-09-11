@@ -10,6 +10,7 @@ plot(feb2007$stdtime, feb2007$Sub_metering_1,
      main = "", 
      xlab = "", 
      ylab = "Energy sub metering" )
+# As soon as we have to have three charts on the same canvas, we use points() to add them
 points(feb2007$stdtime, feb2007$Sub_metering_2, 
        type = "l", 
        main = "", 
@@ -22,6 +23,7 @@ points(feb2007$stdtime, feb2007$Sub_metering_3,
        xlab = "", 
        ylab = "Energy sub metering", 
        col = "blue" )
+# Add a legend
 legend("topright", 
        lty = c(1, 1, 1), 
        col = c("black", "red", "blue"), 
